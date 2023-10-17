@@ -1,0 +1,360 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header
+{
+	position: fixed;
+	display: flex;
+	border: 1px solid #f2f2f2;
+	padding: 20px 15px;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	background-color: #009900;
+	width: 100%;
+	z-index: 1;
+}
+
+header .bar i
+{
+	font-size: 1.4em;
+	cursor: pointer;
+}
+
+header .links
+{
+	font-size: 24px;
+}
+
+header .mail i
+{
+	font-size: 24px;
+}
+
+section 
+{	
+	position: relative;
+	padding: 80px 5px 60px 5px;
+	display: flex;
+	justify-content: center;
+	max-width: 980px;
+	margin: auto;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #ccc;
+}
+
+section .box
+{
+	position: relative;
+	width: 250px;
+	margin: 5px 5px 20px 5px;
+	border: 2px solid #009900;
+	cursor: pointer;
+	border-radius: 10px;
+}
+section .box:hover
+{
+	background: #009900;
+	color: #fff;
+	border: 2px solid #00cc66;
+}
+section .box .imgBx
+{
+	position: relative;
+	width: 100%;
+}
+section .box .imgBx img{
+	width: 100%;
+}
+section .content
+{
+	padding: 10px;
+	text-align: center;
+}
+section .content h3
+{
+	margin: 15px 10px;
+	font-size: 1.4em;
+	font-weight: normal;
+}
+section .content p
+{
+	font-weight: 100;
+	font-size: 15px;
+}
+
+section .pagination{
+	display: block;
+	width: 50%;
+	margin: auto;
+}
+
+section .pagination ul{
+	list-style: none;
+	text-align: center;
+}
+
+section .pagination ul li{
+	display: inline-block;
+	padding: 10px 15px;
+}
+section .pagination ul li:hover
+{
+	background-color: #111;
+	color: #fff;
+}
+section .pagination .active
+{
+	background-color: #009900;
+	color: #fff;
+}
+
+section.about_chef{
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+section.about_chef > p
+{
+	font-size: 1.5em;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+section.about_chef .content p.slogan
+{
+	font-size: 1.1em;
+	margin-bottom: 20px;
+	font-style: italic;
+}
+
+section.about_chef .content p.desc
+{
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5em;
+}
+section.footer .box
+{
+	position: relative;
+	width: 300px;
+	margin: 5px;
+}
+
+section.footer .box p.heading
+{
+	text-transform: uppercase;
+	font-size: 1.5em;
+	line-height: 2em;
+}
+
+section.footer .box p.desc
+{
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+section.footer .box > span
+{
+	margin-top: 10px;
+	display: inline-block;
+}
+section.footer .box > span a
+{
+	color: #000;
+}
+
+section.footer .box .blog
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 15px;
+}
+section.footer .box .blog .imgBx
+{
+	position: relative;
+	width: 50px;
+}
+
+section.footer .box .blog .text
+{
+	margin: 0 10px;
+}
+
+section.footer .box .blog .text h4{
+	line-height: 1.5em;
+}
+
+section.footer .box .blog .imgBx img
+{
+	width: 100%;
+}
+
+section.footer .box .blog:nth-child(2)
+{
+	border-bottom: 1px solid #ccc;
+}
+
+section.footer .box .blog:hover
+{
+	background-color: #f2f2f2;
+}
+
+section.footer .box .popular_tags
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+section.footer .box .popular_tags .tags
+{
+	background-color: #555;
+	margin: 0px 3px 20px 3px;
+	padding: 3px;
+	color: #fff;
+	font-size: 13px;
+	cursor: pointer;
+}
+section.footer .box .popular_tags .tags:hover{
+	background-color: #222;
+}
+section.footer .box .popular_tags .tags:nth-child(1)
+{
+	background-color: #000;
+}
+
+@media(max-width: 780px)
+{
+	section 
+	{	
+		padding: 80px 5px 10px 5px;
+	}
+
+	section.about_chef > p
+	{
+		font-size: 1.3em;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	section.about_chef > .imgBx
+	{
+		width: 70%;
+	}
+
+	section.about_chef > .imgBx img{
+		width: 100%;
+	}
+	section.about_chef > p
+	{
+		font-size: 1.3em;
+		margin-bottom: 30px;
+		text-align: center;
+		padding: 20px;
+	}
+	section.about_chef .content
+	{
+		padding: 20px;
+	}
+	section .pagination{
+		width: 100%;
+	}
+	
+}
+
+@media(max-width: 750px)
+{
+	section 
+	{	
+		padding: 80px 5px 10px 5px;
+	}
+	section .box
+	{
+		position: relative;
+		width: 46%;
+		margin: 15px 5px 20px 5px;
+	}
+	section .content h3
+	{
+		margin: 15px 10px;
+		font-size: 1.2em;
+		font-weight: normal;
+	}
+	section .box .imgBx
+	{
+		position: relative;
+		width: 100%;
+	}
+	section .box .imgBx img{
+		width: 100%;
+	}	
+}
+
+@media(max-width: 508px)
+{
+	section .box
+	{
+		position: relative;
+		width: 80%;
+		margin: 15px 5px 20px 5px;
+	}
+	section.footer .box
+	{
+		width: 85%;
+	}
+	section.footer .box p.heading
+	{
+		text-transform: uppercase;
+		font-size: 1.2em;
+		line-height: 1.5em;
+	}
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #009900;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 35px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
